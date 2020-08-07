@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MovieApp</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="username">John Marker</string>
+    <string name="birthday">1970-01-01</string>
+    <string name="mail">johnmarker@gmail.com</string>
+    <string name="gender">Male</string>
+    <string name="edit_button">Edit</string>
+    <string name="reminder_list">Reminder List:</string>
+    <string name="reminder_sample1">The Dark Tower - 2017 - 5.6/10 2017-09-02 10:06</string>
+    <string name="show_all">Show All</string>
+    <string name="copyright">Copyright@Enc 2017</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="female">Female</string>
+    <string name="cancel_text">Cancel</string>
+    <string name="done_text">Done</string>
+    <string name="overview_sample">Nick Fury is compelled to launch the Avengers Initiative when
+        Loki poses a threat to planet Earth. His squad of superheroes put their minds together to
+        accomplish the task.Note </string>
+    <string name="filter">Filter</string>
+</resources>

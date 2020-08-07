@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/movieFragment">
+    <fragment
+        android:id="@+id/movieFragment"
+        android:name="com.shin.movieapp.ui.popular_movie.MovieFragment"
+        android:label="Popular"
+        tools:layout="@layout/fragment_movie">
+        <action
+            android:id="@+id/action_movieFragment_to_singleMovieFragment"
+            app:destination="@id/singleMovieFragment" />
+        <action
+            android:id="@+id/action_movieFragment_to_reminderFragment"
+            app:destination="@id/reminderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.shin.movieapp.ui.about.AboutFragment"
+        android:label="About"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.shin.movieapp.ui.favorite.FavFragment"
+        android:label="Favorites"
+        tools:layout="@layout/fragment_favorite" >
+        <argument
+            android:name="movie_id"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_favoriteFragment_to_singleMovieFragment"
+            app:destination="@id/singleMovieFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.shin.movieapp.ui.setting.SettingFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/singleMovieFragment"
+        android:name="com.shin.movieapp.ui.movie.SingleMovieFragment"
+        android:label="singleMovieFragment"
+        tools:layout="@layout/fragment_single_movie">
+        <argument
+            android:name="movie_id"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/reminderFragment"
+        android:name="com.shin.movieapp.ui.reminder.ReminderFragment"
+        android:label="All Reminders"
+        tools:layout="@layout/fragment_reminder" >
+        <action
+            android:id="@+id/action_reminderFragment_to_singleMovieFragment"
+            app:destination="@id/singleMovieFragment" />
+    </fragment>
+</navigation>

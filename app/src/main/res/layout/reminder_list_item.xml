@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#20BCBC"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp">
+
+    <TextView
+        android:id="@+id/movie_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reminder_sample1"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/reminder_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reminder_sample1"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="17sp" />
+</LinearLayout>

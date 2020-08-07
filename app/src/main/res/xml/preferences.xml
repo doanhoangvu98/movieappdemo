@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        app:key="pref1"
+        android:title="@string/filter"
+        android:layout="@layout/settings_text"
+        app:iconSpaceReserved="false">
+
+        <CheckBoxPreference
+            android:title="Popular Movies"
+            app:iconSpaceReserved="false"
+            app:key="key_popular"
+            android:defaultValue="true"/>
+
+        <CheckBoxPreference
+            android:title="Top Rated Movies"
+            app:iconSpaceReserved="false"
+            app:key="key_top_rated"/>
+
+        <CheckBoxPreference
+            android:title="Upcoming Movies"
+            app:iconSpaceReserved="false"
+            app:key="key_upcoming"/>
+
+        <CheckBoxPreference
+            android:title="NowPlaying Movies"
+            app:iconSpaceReserved="false"
+            app:key="key_now_playing"/>
+
+        <SeekBarPreference
+            app:key="key_rating"
+            app:title="Movie with rate from:"
+            app:iconSpaceReserved="false"
+            android:max="10" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Sort By"
+        android:layout="@layout/settings_text"
+        app:iconSpaceReserved="false">
+
+        <CheckBoxPreference
+            android:title="Release Date"
+            app:iconSpaceReserved="false"/>
+
+        <CheckBoxPreference
+            android:title="Rating"
+            app:iconSpaceReserved="false"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Reminder"
+        app:layout="@layout/settings_text"
+        app:iconSpaceReserved="false">
+
+        <Preference
+            app:key="go_to_reminder_pre"
+            app:title="All Reminders"
+            app:iconSpaceReserved="false"
+            app:fragment="com.shin.movieapp.ui.reminder.ReminderFragment"/>
+
+    </PreferenceCategory>
+</PreferenceScreen>

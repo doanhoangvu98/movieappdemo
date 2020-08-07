@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".ui.favorite.FavFragment">
+
+
+    <ProgressBar
+        android:id="@+id/loading"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="5dp" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_view_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_searchview"
+        app:iconifiedByDefault="false"
+        app:queryBackground="@null"
+        app:layout_constraintTop_toTopOf="parent"
+        app:defaultQueryHint="Enter movie name ..."/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/favorite_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_view_text"
+        tools:listitem="@layout/favorite_list_item" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
